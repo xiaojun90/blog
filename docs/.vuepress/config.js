@@ -37,7 +37,8 @@ module.exports = {
           title: '杂记',
           collapsable: false,
           children:[
-            '501'
+            '501',
+            '502'
           ]
         }
           ],
