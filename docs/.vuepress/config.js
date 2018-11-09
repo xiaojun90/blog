@@ -9,7 +9,7 @@ module.exports = {
 	  { text: '前端', link: '/frontend' },
 	  { text: '后端', link: '/backend' },
 	  { text: '大数据', link: '/bigdata' },
-	  { text: '杂项', link: '/other' },
+	  { text: '杂记', link: '/other/501' },
       { text: 'External', link: 'https://google.com' } //,
 	  /**
 	   {
@@ -32,6 +32,15 @@ module.exports = {
 			]
 		}
       ],
+      '/other/': [
+        {
+          title: '杂记',
+          collapsable: false,
+          children:[
+            '501'
+          ]
+        }
+          ],
 	  // fallback
       '/': [
         ''
