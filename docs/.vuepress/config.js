@@ -5,11 +5,11 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '架构设计', link: '/architecture/08' },
-	  { text: '前端', link: '/frontend' },
+      { text: '架构设计', link: '/architecture/1001' },
+	  { text: '前端', link: '/frontend/4001' },
 	  { text: '后端', link: '/backend' },
 	  { text: '大数据', link: '/bigdata' },
-	  { text: '杂记', link: '/other/501' },
+	  { text: '杂记', link: '/other/5001' },
       { text: 'External', link: 'https://google.com' } //,
 	  /**
 	   {
@@ -24,24 +24,33 @@ module.exports = {
     ],
 	sidebar: {
       '/architecture/': [
-		{
-			title: '架构设计',
-			collapsable: false,
-			children:[
-				'08'
-			]
-		}
+        {
+          title: '架构设计',
+          collapsable: false,
+          children:[
+            '1001'
+          ]
+        }
+      ],
+      '/frontend/': [
+        {
+          title: '前端',
+          collapsable: false,
+          children:[
+            '4001'
+          ]
+        }
       ],
       '/other/': [
         {
           title: '杂记',
           collapsable: false,
           children:[
-            '501',
-            '502'
+            '5001',
+            '5002'
           ]
         }
-          ],
+      ],     
 	  // fallback
       '/': [
         ''
