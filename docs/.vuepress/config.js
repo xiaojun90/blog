@@ -30,7 +30,8 @@ module.exports = {
           children:[
             '1002',
             '1001',
-            '1003'
+            '1003',
+            '1004'
           ]
         }
       ],
@@ -59,5 +60,10 @@ module.exports = {
       ]
 	},
 	lastUpdated: '上次更新'
+  },
+  plugins: {
+    '@vuepress/last-updated':{
+      transformer: 'yyyy-MM-dd HH:mm:ss'
+    }
   }
 }
