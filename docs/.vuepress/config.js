@@ -5,7 +5,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '架构设计', link: '/architecture/1001' },
+      { text: '架构设计', link: '/architecture/1002' },
 	  { text: '前端', link: '/frontend/4001' },
 	  { text: '后端', link: '/backend' },
 	  { text: '大数据', link: '/bigdata' },
@@ -28,6 +28,7 @@ module.exports = {
           title: '架构设计',
           collapsable: false,
           children:[
+            '1002',
             '1001'
           ]
         }
@@ -56,6 +57,6 @@ module.exports = {
         ''
       ]
 	},
-	lastUpdated: 'Last Updated'
+	lastUpdated: '上次更新'
   }
 }
