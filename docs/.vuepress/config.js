@@ -2,6 +2,9 @@ module.exports = {
   base: '/blog/',
   title: '肖君的博客',
   description: '喷泉之所以漂亮是因为有压力,瀑布之所以壮观是因为没有退路',
+  head: [
+    ['link', { rel: 'icon', href: '/logo.ico' }]
+  ],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
