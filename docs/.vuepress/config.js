@@ -10,7 +10,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '架构设计', link: '/architecture/1002' },
 	  { text: '前端', link: '/frontend/4001' },
-	  { text: '后端', link: '/backend' },
+	  { text: '后端', link: '/backend/2001' },
 	  { text: '大数据', link: '/bigdata' },
 	  { text: '杂记', link: '/other/5001' },
       { text: 'External', link: 'https://google.com' } //,
@@ -50,6 +50,15 @@ module.exports = {
           collapsable: false,
           children:[
             '4001'
+          ]
+        }
+      ],
+      '/backend/':[
+        {
+          title:'后端技术',
+          collapsable: false,
+          children:[
+            '2001'
           ]
         }
       ],
