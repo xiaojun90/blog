@@ -1,3 +1,5 @@
+const architectureChildren = ['1002','1001','1003','1004', '1005', 
+'1006','1007','1008','1009','1010','1011','1012','1013','1014']
 module.exports = {
   base: '/blog/',
   title: '肖君的博客',
@@ -30,21 +32,7 @@ module.exports = {
         {
           title: '架构设计',
           collapsable: false,
-          children:[
-            '1002',
-            '1001',
-            '1003',
-            '1004',
-            '1005',
-            '1006',
-            '1007',
-            '1008',
-            '1009',
-            '1010',
-            '1011',
-            '1012',
-            '1013'
-          ]
+          children:architectureChildren
         }
       ],
       '/frontend/': [
