@@ -14,7 +14,12 @@ module.exports = {
       { text: '架构设计', link: '/architecture/1002' },
 	  { text: '前端', link: '/frontend/4001' },
 	  { text: '后端', link: '/backend/2001' },
-	  { text: '大数据', link: '/bigdata' },
+    { text: '大数据', link: '/bigdata' },
+    { text: '系列教程',
+      items:[
+        {text:'Netty系列',link:'/series/netty/'}
+      ]  
+    },
 	  { text: '杂记', link: '/other/5001' },
       { text: 'External', link: 'https://google.com' } //,
 	  /**
@@ -66,7 +71,19 @@ module.exports = {
             '5003'
           ]
         }
-      ],     
+      ], 
+      '/series/netty/':[
+        {
+          title:'Netty系列',
+          collapsable: false,
+          children:[
+            '',
+            '6001',
+            '6002',
+            '6003'
+          ]
+        }
+      ],    
 	  // fallback
       '/': [
         ''
