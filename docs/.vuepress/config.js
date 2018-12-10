@@ -1,6 +1,6 @@
-const architectureChildren = ['1002','1001','1003','1004', '1005', 
+const architectureChildren = ['','1002','1001','1003','1004', '1005', 
 '1006','1007','1008','1009','1010','1011','1012','1013','1014','1015',
-'1016','1017','1018','1019']
+'1016','1017','1018','1019','1020']
 module.exports = {
   base: '/blog/',
   title: '肖君的博客',
@@ -11,7 +11,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '架构设计', link: '/architecture/1002' },
+      { text: '架构设计', link: '/architecture/' },
 	  { text: '前端', link: '/frontend/4001' },
 	  { text: '后端', link: '/backend/2001' },
     { text: '大数据', link: '/bigdata' },
