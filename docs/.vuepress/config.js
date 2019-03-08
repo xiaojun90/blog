@@ -2,8 +2,12 @@ const architectureChildren = ['','1002','1001','1003','1004', '1005',
 '1006','1007','1008','1009','1010','1011','1012','1013','1014','1015',
 '1016','1017','1018','1019','1020','1021','1022','1023','1024','1025',
 '1026','1027','1028','1029','1030','1031','1032','1033','1034','1035',
-'1036','1037','1038','1039','1040','1041']
+'1036','1037','1038','1039','1040','1041'];
+
+const moment = require('moment');
+
 module.exports = {
+  dest: '../../vuepress',
   base: '/blog/',
   title: '肖君的博客',
   description: '喷泉之所以漂亮是因为有压力,瀑布之所以壮观是因为没有退路',
@@ -36,6 +40,7 @@ module.exports = {
 	 
     ],
 	sidebar: {
+
       '/architecture/': [
         {
           title: '架构设计',
@@ -77,7 +82,8 @@ module.exports = {
             '5002',
             '5003',
             '5004',
-            '5005'
+            '5005',
+            '5006'
           ]
         }
       ], 
@@ -98,11 +104,20 @@ module.exports = {
         ''
       ]
 	},
-	lastUpdated: '上次更新'
+  lastUpdated: '上次更新'
   },
-  plugins: {
-    '@vuepress/last-updated':{
-      transformer: 'yyyy-MM-dd HH:mm:ss'
-    }
-  }
-}
+  plugins: [
+    ['@vuepress/back-to-top',true],
+    [ 
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale('zh-cn')
+          return moment(timestamp).fromNow()
+        }
+      }
+    ]
+  ],
+};
