@@ -7,7 +7,6 @@ const architectureChildren = ['','1002','1001','1003','1004', '1005',
 const moment = require('moment');
 
 module.exports = {
-  dest: '../../vuepress',
   base: '/blog/',
   title: '肖君的博客',
   description: '喷泉之所以漂亮是因为有压力,瀑布之所以壮观是因为没有退路',
