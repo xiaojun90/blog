@@ -21,7 +21,8 @@ export default {
       notify:false, 
       verify:false, 
       avatar:'mm', 
-      placeholder: 'just go go' 
+      placeholder: 'just go go',
+      path:window.location.pathname
     });
   },
 }
