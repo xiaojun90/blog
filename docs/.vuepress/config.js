@@ -105,6 +105,9 @@ module.exports = {
 	},
   lastUpdated: '上次更新'
   },
+  markdown: {
+    lineNumbers:true
+  },
   plugins: [
     ['@vuepress/back-to-top',true],
     [ 
