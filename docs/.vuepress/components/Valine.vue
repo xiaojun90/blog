@@ -21,7 +21,7 @@ export default {
       notify:false, 
       verify:false, 
       avatar:'mm', 
-      placeholder: 'just go go',
+      placeholder: '想对作者说些什么',
       path:window.location.pathname
     });
   },
