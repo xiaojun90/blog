@@ -5,3 +5,4 @@ db.json
 node_modules/
 .deploy*/
 docs/.vuepress/dist/
+.vscode/sftp.json
