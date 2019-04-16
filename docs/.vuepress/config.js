@@ -22,7 +22,8 @@ module.exports = {
     { text: '大数据', link: '/bigdata' },
     { text: '系列教程',
       items:[
-        {text:'Netty系列',link:'/series/netty/'}
+        {text:'Netty系列',link:'/series/netty/'},
+        {text:'Dubbo系列',link:'/series/dubbo/'}
       ]  
     },
 	  { text: '杂记', link: '/other/5001' },
@@ -106,7 +107,17 @@ module.exports = {
             '6003'
           ]
         }
-      ],    
+      ],  
+      '/series/dubbo/':[
+        {
+          title:'dubbo系列',
+          collapsable: false,
+          children:[
+            '',
+            '6004'
+          ]
+        }
+      ],  
 	  // fallback
       '/': [
         ''
