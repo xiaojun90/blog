@@ -114,7 +114,9 @@ module.exports = {
           collapsable: false,
           children:[
             '',
-            '6004'
+            '6004',
+            '6005',
+            '6006'
           ]
         }
       ],  
