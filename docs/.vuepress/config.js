@@ -12,7 +12,7 @@ const backendChildren = ['2001','2002','2003','2004','2005',
 module.exports = {
   base: '/blog/',
   title: 'Joyxj',
-  description: '喷泉之所以漂亮是因为有压力,瀑布之所以壮观是因为没有退路',
+  description: '该博客已停止更新，请访问: https://joyxj.com',
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }]
   ],
