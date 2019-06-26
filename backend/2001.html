@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CAS系列01-CAS Server搭建 | Joyxj</title>
+    <meta name="description" content="该博客已停止更新，请访问: https://joyxj.com">
+    <link rel="icon" href="/blog/logo.ico">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.69658b2c.css" as="style"><link rel="preload" href="/blog/assets/js/app.031b747b.js" as="script"><link rel="preload" href="/blog/assets/js/2.48c166e5.js" as="script"><link rel="preload" href="/blog/assets/js/58.dd36f215.js" as="script"><link rel="preload" href="/blog/assets/js/11.e98dd118.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.36b2f03d.js"><link rel="prefetch" href="/blog/assets/js/12.ed06b578.js"><link rel="prefetch" href="/blog/assets/js/13.3c5fe50c.js"><link rel="prefetch" href="/blog/assets/js/14.9b523fd3.js"><link rel="prefetch" href="/blog/assets/js/15.7a030138.js"><link rel="prefetch" href="/blog/assets/js/16.f7bc28ad.js"><link rel="prefetch" href="/blog/assets/js/17.34ecfbef.js"><link rel="prefetch" href="/blog/assets/js/18.eb354e34.js"><link rel="prefetch" href="/blog/assets/js/19.621fe99c.js"><link rel="prefetch" href="/blog/assets/js/20.bf4d4124.js"><link rel="prefetch" href="/blog/assets/js/21.3def2c0b.js"><link rel="prefetch" href="/blog/assets/js/22.3f045030.js"><link rel="prefetch" href="/blog/assets/js/23.f8cd15c0.js"><link rel="prefetch" href="/blog/assets/js/24.4ea57df2.js"><link rel="prefetch" href="/blog/assets/js/25.2b941ebf.js"><link rel="prefetch" href="/blog/assets/js/26.46dcab34.js"><link rel="prefetch" href="/blog/assets/js/27.245c465b.js"><link rel="prefetch" href="/blog/assets/js/28.5d8470c5.js"><link rel="prefetch" href="/blog/assets/js/29.9473b7ec.js"><link rel="prefetch" href="/blog/assets/js/3.66aaf88e.js"><link rel="prefetch" href="/blog/assets/js/30.709d6fe6.js"><link rel="prefetch" href="/blog/assets/js/31.58e5919f.js"><link rel="prefetch" href="/blog/assets/js/32.ce4f47ba.js"><link rel="prefetch" href="/blog/assets/js/33.cc99d717.js"><link rel="prefetch" href="/blog/assets/js/34.1f91e004.js"><link rel="prefetch" href="/blog/assets/js/35.3571cfbb.js"><link rel="prefetch" href="/blog/assets/js/36.6a97d6da.js"><link rel="prefetch" href="/blog/assets/js/37.0e5b8fda.js"><link rel="prefetch" href="/blog/assets/js/38.72abbcf5.js"><link rel="prefetch" href="/blog/assets/js/39.f81d974a.js"><link rel="prefetch" href="/blog/assets/js/4.1d298d49.js"><link rel="prefetch" href="/blog/assets/js/40.5675edb6.js"><link rel="prefetch" href="/blog/assets/js/41.06aebbc7.js"><link rel="prefetch" href="/blog/assets/js/42.ec085821.js"><link rel="prefetch" href="/blog/assets/js/43.ed4c8939.js"><link rel="prefetch" href="/blog/assets/js/44.74124250.js"><link rel="prefetch" href="/blog/assets/js/45.06667515.js"><link rel="prefetch" href="/blog/assets/js/46.99c326fb.js"><link rel="prefetch" href="/blog/assets/js/47.3968849a.js"><link rel="prefetch" href="/blog/assets/js/48.55ab51fa.js"><link rel="prefetch" href="/blog/assets/js/49.0b6372b7.js"><link rel="prefetch" href="/blog/assets/js/5.67f4c3de.js"><link rel="prefetch" href="/blog/assets/js/50.c95f8843.js"><link rel="prefetch" href="/blog/assets/js/51.6e630485.js"><link rel="prefetch" href="/blog/assets/js/52.de8d77e2.js"><link rel="prefetch" href="/blog/assets/js/53.ea5fe844.js"><link rel="prefetch" href="/blog/assets/js/54.c3094c4c.js"><link rel="prefetch" href="/blog/assets/js/55.fb84ca60.js"><link rel="prefetch" href="/blog/assets/js/56.6db06f77.js"><link rel="prefetch" href="/blog/assets/js/57.6713b160.js"><link rel="prefetch" href="/blog/assets/js/59.99a80f4a.js"><link rel="prefetch" href="/blog/assets/js/6.0776e1fb.js"><link rel="prefetch" href="/blog/assets/js/60.92997268.js"><link rel="prefetch" href="/blog/assets/js/61.8532934c.js"><link rel="prefetch" href="/blog/assets/js/62.40139a10.js"><link rel="prefetch" href="/blog/assets/js/63.1829e1df.js"><link rel="prefetch" href="/blog/assets/js/64.d3cc70ac.js"><link rel="prefetch" href="/blog/assets/js/65.73484530.js"><link rel="prefetch" href="/blog/assets/js/66.e11b16f6.js"><link rel="prefetch" href="/blog/assets/js/67.2f12c966.js"><link rel="prefetch" href="/blog/assets/js/68.6cf8f9cb.js"><link rel="prefetch" href="/blog/assets/js/69.d5627070.js"><link rel="prefetch" href="/blog/assets/js/7.3267807a.js"><link rel="prefetch" href="/blog/assets/js/70.2ad3f243.js"><link rel="prefetch" href="/blog/assets/js/71.2f68f886.js"><link rel="prefetch" href="/blog/assets/js/72.0152b066.js"><link rel="prefetch" href="/blog/assets/js/73.41ee1205.js"><link rel="prefetch" href="/blog/assets/js/74.920d4bc9.js"><link rel="prefetch" href="/blog/assets/js/75.b2d6c93b.js"><link rel="prefetch" href="/blog/assets/js/76.e66a8d5e.js"><link rel="prefetch" href="/blog/assets/js/77.ca4251c6.js"><link rel="prefetch" href="/blog/assets/js/78.9bb35162.js"><link rel="prefetch" href="/blog/assets/js/79.d82d8484.js"><link rel="prefetch" href="/blog/assets/js/8.0ddd2ef5.js"><link rel="prefetch" href="/blog/assets/js/80.80c1f257.js"><link rel="prefetch" href="/blog/assets/js/81.6b8d938a.js"><link rel="prefetch" href="/blog/assets/js/82.6d3d9bc9.js"><link rel="prefetch" href="/blog/assets/js/83.c6466837.js"><link rel="prefetch" href="/blog/assets/js/84.b5d49150.js"><link rel="prefetch" href="/blog/assets/js/85.0983c45a.js"><link rel="prefetch" href="/blog/assets/js/86.9c6c1ddc.js"><link rel="prefetch" href="/blog/assets/js/87.c17f7096.js"><link rel="prefetch" href="/blog/assets/js/88.dfbd699a.js"><link rel="prefetch" href="/blog/assets/js/89.7fa011ad.js"><link rel="prefetch" href="/blog/assets/js/9.434ce666.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.69658b2c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Joyxj</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/architecture/" class="nav-link">架构设计</a></div><div class="nav-item"><a href="/blog/frontend/4001.html" class="nav-link">前端</a></div><div class="nav-item"><a href="/blog/backend/2001.html" class="nav-link router-link-exact-active router-link-active">后端</a></div><div class="nav-item"><a href="/blog/bigdata.html" class="nav-link">大数据</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">系列教程</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/series/netty/" class="nav-link">Netty系列</a></li><li class="dropdown-item"><!----> <a href="/blog/series/dubbo/" class="nav-link">Dubbo系列</a></li></ul></div></div><div class="nav-item"><a href="/blog/other/5001.html" class="nav-link">杂记</a></div><div class="nav-item"><a href="https://github.com/xiaojun90/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/architecture/" class="nav-link">架构设计</a></div><div class="nav-item"><a href="/blog/frontend/4001.html" class="nav-link">前端</a></div><div class="nav-item"><a href="/blog/backend/2001.html" class="nav-link router-link-exact-active router-link-active">后端</a></div><div class="nav-item"><a href="/blog/bigdata.html" class="nav-link">大数据</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">系列教程</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/series/netty/" class="nav-link">Netty系列</a></li><li class="dropdown-item"><!----> <a href="/blog/series/dubbo/" class="nav-link">Dubbo系列</a></li></ul></div></div><div class="nav-item"><a href="/blog/other/5001.html" class="nav-link">杂记</a></div><div class="nav-item"><a href="https://github.com/xiaojun90/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>后端技术</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/backend/2001.html" class="active sidebar-link">CAS系列01-CAS Server搭建</a></li><li><a href="/blog/backend/2002.html" class="sidebar-link">高可用的“几个9”结论</a></li><li><a href="/blog/backend/2003.html" class="sidebar-link">linux下如何解决jvm执行取得的时间和系统时间不一致的问题</a></li><li><a href="/blog/backend/2004.html" class="sidebar-link">jersey实现动态绑定</a></li><li><a href="/blog/backend/2005.html" class="sidebar-link">jersey中@RolesAllowed的使用</a></li><li><a href="/blog/backend/2006.html" class="sidebar-link">zookeeper 日志清理</a></li><li><a href="/blog/backend/2007.html" class="sidebar-link">Elasticsearch安装及配置</a></li><li><a href="/blog/backend/2008.html" class="sidebar-link">spring boot配置druid数据库密码加密</a></li><li><a href="/blog/backend/2009.html" class="sidebar-link">java项目自动部署的启动和终止的脚本</a></li><li><a href="/blog/backend/2010.html" class="sidebar-link">Zookeeper不断提示连接被拒绝问题解决</a></li><li><a href="/blog/backend/2011.html" class="sidebar-link">分布式系统所带来的技术问题</a></li><li><a href="/blog/backend/2012.html" class="sidebar-link">log4j配置无效的解决方法</a></li><li><a href="/blog/backend/19041601.html" class="sidebar-link">rabbit mq一次重复消费的解决过程</a></li><li><a href="/blog/backend/19050901.html" class="sidebar-link">Centos7 安装 Rabbit mq</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="cas简单使用"><a href="#cas简单使用" aria-hidden="true" class="header-anchor">#</a> CAS简单使用</h1> <ol><li>从git下载cas，下载的是4.1.x版本。它是用maven管理Jar包的最后版本。</li> <li>导入到idea中。</li> <li>找到cas-server-webapp子项目，修改pom.xml,增加tomcat7 plugin启动</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;
+    &lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;2.2&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;uriEncoding&gt;UTF-8&lt;/uriEncoding&gt;
+        &lt;path&gt;/cas&lt;/path&gt;
+        &lt;port&gt;80&lt;/port&gt;
+        &lt;contextReloadable&gt;false&lt;/contextReloadable&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>注:其本身提供了jetty的启动方式，但是默认修改配置密钥，所以不暂时不使用。</p> <ol start="4"><li>修改deployerConfigContext.xml文件，修改默认的用户名和密码。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;bean id=&quot;primaryAuthenticationHandler&quot;
+          class=&quot;org.jasig.cas.authentication.AcceptUsersAuthenticationHandler&quot;&gt;
+    &lt;property name=&quot;users&quot;&gt;
+        &lt;map&gt;
+            &lt;entry key=&quot;admin&quot; value=&quot;123456&quot;/&gt;
+        &lt;/map&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ol start="5"><li><p>用tomcat7:run启动</p></li> <li><p>浏览器输入http://localhost/cas/login，如果正常访问即表示cas-server搭建成功。</p></li> <li><p>去除HTTPS认证</p></li></ol> <p>此时访问登录页面，会出现下面的提示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Non-secure Connection
+You are currently accessing CAS over a non-secure connection. Single Sign On WILL NOT WORK. In order to have single sign on work, you MUST log in over HTTPS.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>提示需要配置https认证，下面我们就把这个去掉。</p> <ul><li>修改deployerConfigContext.xml文件</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#找到如下bean配置
+&lt;bean class=&quot;org.jasig.cas.authentication.handler.support.HttpBasedServiceCredentialsAuthenticationHandler&quot;
+p:httpClient-ref=&quot;httpClient&quot;/&gt;
+
+#增加p:requireSecure=&quot;false&quot;
+&lt;bean id=&quot;proxyAuthenticationHandler&quot;
+class=&quot;org.jasig.cas.authentication.handler.support.HttpBasedServiceCredentialsAuthenticationHandler&quot;
+p:httpClient-ref=&quot;httpClient&quot; p:requireSecure=&quot;false&quot;/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>修改ticketGrantingTicketCookieGenerator.xml修改p:cookieSecure=”false”</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 找到如下bean配置
+&lt;bean id=&quot;ticketGrantingTicketCookieGenerator&quot; class=&quot;org.jasig.cas.web.support.CookieRetrievingCookieGenerator&quot;
+        p:cookieSecure=&quot;true&quot;
+        p:cookieMaxAge=&quot;-1&quot;
+        p:cookieName=&quot;CASTGC&quot;
+        p:cookiePath=&quot;/cas&quot; /&gt;
+#修改后为：
+&lt;bean id=&quot;ticketGrantingTicketCookieGenerator&quot; class=&quot;org.jasig.cas.web.support.CookieRetrievingCookieGenerator&quot;
+    p:cookieSecure=&quot;false&quot;
+    p:cookieMaxAge=&quot;-1&quot;
+    p:cookieName=&quot;CASTGC&quot;
+    p:cookiePath=&quot;/cas&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>修改warnCookieGenerator.xml修改p:cookieSecure=”false”</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 找到如下配置
+&lt;bean id=&quot;warnCookieGenerator&quot; class=&quot;org.jasig.cas.web.support.CookieRetrievingCookieGenerator&quot;
+        p:cookieSecure=&quot;true&quot;
+        p:cookieMaxAge=&quot;-1&quot;
+        p:cookieName=&quot;CASPRIVACY&quot;
+        p:cookiePath=&quot;/cas&quot; /&gt;
+# 修改后为：
+&lt;bean id=&quot;warnCookieGenerator&quot; class=&quot;org.jasig.cas.web.support.CookieRetrievingCookieGenerator&quot;
+        p:cookieSecure=&quot;false&quot;
+        p:cookieMaxAge=&quot;-1&quot;
+        p:cookieName=&quot;CASPRIVACY&quot;
+        p:cookiePath=&quot;/cas&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>修改cas-server-webapp\src\main\resources\services\HTTPSandIMAPS-10000001.json下的文件增加http配置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 找到如下配置
+  &quot;@class&quot; : &quot;org.jasig.cas.services.RegexRegisteredService&quot;,
+  &quot;serviceId&quot; : &quot;^(https|imaps)://.*&quot;,
+  &quot;name&quot; : &quot;HTTPS and IMAPS&quot;,
+  &quot;id&quot; : 10000001,
+
+# 修改成如下配置
+  &quot;@class&quot; : &quot;org.jasig.cas.services.RegexRegisteredService&quot;,
+  &quot;serviceId&quot; : &quot;^(https|imaps|http)://.*&quot;,
+  &quot;name&quot; : &quot;HTTPS and IMAPS&quot;,
+  &quot;id&quot; : 10000001,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="warning custom-block"><p class="custom-block-title">注意</p> <p>如果不增加http的配置，应用不无跳转到CAS的登录页面。</p></div> <ul><li><p>去掉登录页面的提示</p> <p>去掉https验证后 保证了http访问也能进行正常交互。但是原生的cas server页面上的提示是不会根据设置自动消失的。只能我们手动去除。</p></li></ul> <ol start="8"><li>基于spring boot配置cas</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>package cn.sibat.cas.demo.config;
+
+import org.jasig.cas.client.authentication.AuthenticationFilter;
+import org.jasig.cas.client.session.SingleSignOutFilter;
+import org.jasig.cas.client.session.SingleSignOutHttpSessionListener;
+import org.jasig.cas.client.util.HttpServletRequestWrapperFilter;
+import org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import javax.servlet.annotation.WebFilter;
+import java.util.*;
+
+/**
+ * CAS 过滤器
+ * @author: xiaojun
+ * @version: 2018/11/22
+ */
+@Configuration
+public class CasConfig {
+
+    /**
+     * 登出监听器
+     * @return
+     */
+    @Bean
+    public ServletListenerRegistrationBean singleSignOutHttpSessionListener() {
+        ServletListenerRegistrationBean registrationBean = new ServletListenerRegistrationBean();
+        registrationBean.setListener(new SingleSignOutHttpSessionListener());
+        return registrationBean;
+    }
+
+    /**
+     * 登出过滤器
+     * @return
+     */
+    @Bean
+    public FilterRegistrationBean singleSignOutFilter() {
+        FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
+        filterRegistrationBean.setFilter(new SingleSignOutFilter());
+        List&lt;String&gt; urlPatterns = new ArrayList&lt;&gt;();
+        urlPatterns.add(&quot;/*&quot;);
+        filterRegistrationBean.setUrlPatterns(urlPatterns);
+        filterRegistrationBean.setOrder(1); //登出过滤器的优先级要最高，否则登录会不生效。
+        return filterRegistrationBean;
+    }
+
+    /**
+     * 认证Filter
+     * @return
+     */
+    @Bean
+    public FilterRegistrationBean authenticationFilter() {
+        FilterRegistrationBean authenticationFilter = new FilterRegistrationBean();
+        authenticationFilter.setFilter(new AuthenticationFilter());
+        Map&lt;String,String&gt; initParameters = new HashMap&lt;&gt;();
+        initParameters.put(&quot;casServerLoginUrl&quot;,&quot;http://xiaojun02.sibat.cn:8761/cas/login&quot;);
+        initParameters.put(&quot;serverName&quot;, &quot;http://xiaojun02.sibat.cn:8762&quot;);
+        authenticationFilter.setInitParameters(initParameters);
+        authenticationFilter.setOrder(2);
+        List&lt;String&gt; urlPatterns = new ArrayList&lt;String&gt;();
+        urlPatterns.add(&quot;/*&quot;);// 设置匹配的url
+        authenticationFilter.setUrlPatterns(urlPatterns);
+        return authenticationFilter;
+    }
+
+
+    /**
+     * 验证票据Filter
+     * @return
+     */
+    @Bean
+    public FilterRegistrationBean cas20ProxyReceivingTicketValidationFilter() {
+        FilterRegistrationBean cas20ProxyReceivingTicketValidationFilter = new FilterRegistrationBean();
+        cas20ProxyReceivingTicketValidationFilter.setFilter(new Cas20ProxyReceivingTicketValidationFilter());
+        Map&lt;String, String&gt; initParameters = new HashMap&lt;String, String&gt;();
+        initParameters.put(&quot;casServerUrlPrefix&quot;, &quot;http://xiaojun02.sibat.cn:8761/cas&quot;);
+        initParameters.put(&quot;serverName&quot;, &quot;http://xiaojun02.sibat.cn:8762&quot;);
+        cas20ProxyReceivingTicketValidationFilter.setInitParameters(initParameters);
+        cas20ProxyReceivingTicketValidationFilter.setOrder(3);
+        List&lt;String&gt; urlPatterns = new ArrayList&lt;String&gt;();
+        urlPatterns.add(&quot;/*&quot;);// 设置匹配的url
+        cas20ProxyReceivingTicketValidationFilter.setUrlPatterns(urlPatterns);
+
+        return cas20ProxyReceivingTicketValidationFilter;
+    }
+
+    /**
+     * 一个标准的过滤器
+     * @return
+     */
+    @Bean
+    public FilterRegistrationBean casHttpServletRequestWrapperFilter(){
+        FilterRegistrationBean authenticationFilter = new FilterRegistrationBean();
+        authenticationFilter.setFilter(new HttpServletRequestWrapperFilter());
+        authenticationFilter.setOrder(3);
+        List&lt;String&gt; urlPatterns = new ArrayList&lt;String&gt;();
+        urlPatterns.add(&quot;/*&quot;);// 设置匹配的url
+        authenticationFilter.setUrlPatterns(urlPatterns);
+        return authenticationFilter;
+    }
+
+
+
+
+
+}
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br></div></div><div id="vcomments"></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">3 个月前</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/backend/2002.html">
+          高可用的“几个9”结论
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.031b747b.js" defer></script><script src="/blog/assets/js/2.48c166e5.js" defer></script><script src="/blog/assets/js/58.dd36f215.js" defer></script><script src="/blog/assets/js/11.e98dd118.js" defer></script>
+  </body>
+</html>
